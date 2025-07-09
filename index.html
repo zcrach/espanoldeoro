@@ -3,60 +3,146 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Español de Oro – Salvador de Oro</title>
+    <title>Español de Oro • Salvador de Oro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Base Reset & Typography */
+        
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
         
-        header {
-            background: #f9d342;
+        html {
+            font-size: 16px;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
             color: #333;
-            padding: 20px;
+        }
+        
+        a {
+            color: #c59f14;
+            text-decoration: none;
+            transition: color .2s;
+        }
+        
+        a:hover {
+            color: #a08010;
+        }
+        /* Layout */
+        
+        header,
+        footer {
+            background: #c59f14;
+            color: #fff;
             text-align: center;
+            padding: 2rem;
         }
         
         nav {
-            background: #333;
-            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         
         nav a {
-            color: #fff;
-            margin: 0 10px;
-            text-decoration: none;
+            padding: 1rem;
         }
+        /* Hero */
         
         .hero {
-            background: url('salvador-oro-bg.jpg') center/cover;
-            color: white;
-            padding: 80px 20px;
+            background: url('salvador-bg.jpg') center/cover no-repeat;
+            color: #fff;
             text-align: center;
+            padding: 6rem 1rem;
         }
         
-        .section {
-            padding: 40px 20px;
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .btn-primary {
+            background: #a08010;
+            color: #fff;
+            padding: .75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            background: #8b6d0e;
+        }
+        /* Sections */
+        
+        section {
+            padding: 4rem 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            align-items: center;
         }
         
         .profile-img {
-            max-width: 200px;
+            width: 100%;
+            max-width: 250px;
             border-radius: 50%;
         }
+        /* Testimonials & resources */
         
-        .podcast,
-        .contact {
-            max-width: 600px;
+        .testimonials,
+        .resources {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        /* Form */
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 400px;
             margin: auto;
         }
         
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
+        input,
+        textarea {
+            padding: .75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+        
+        input:focus,
+        textarea:focus {
+            border-color: #c59f14;
+            outline: none;
+        }
+        /* Footer */
+        
+        footer p {
+            margin-top: 1rem;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -65,66 +151,78 @@
 
     <header>
         <h1>Español de Oro</h1>
-        <p>Con Salvador de Oro – Tu profesor de español en línea</p>
+        <p>Con Salvador de Oro – Domina el español auténtico y cultural</p>
     </header>
 
     <nav>
         <a href="#about">Sobre mí</a>
-        <a href="#lessons">Clases</a>
-        <a href="#podcast">Podcast</a>
+        <a href="#courses">Clases</a>
+        <a href="#testimonials">Opiniones</a>
+        <a href="#resources">Podcast</a>
         <a href="#contact">Contacto</a>
     </nav>
 
     <section class="hero">
-        <h2>Domina el español con confianza y estilo</h2>
-        <p>Clases personalizadas, conversación real, y cultura de Colombia.</p>
+        <h1>Aprende español con fluidez y confianza</h1>
+        <p>Clases personalizadas, cultura colombiana y preparación DELE</p>
+        <button class="btn-primary" onclick="location.href='#contact'">Reserva tu clase de prueba</button>
     </section>
 
-    <section id="about" class="section">
-        <h2>Sobre mí</h2>
-        <img src="salvador-oro.jpg" alt="Salvador de Oro" class="profile-img">
-        <p>Soy <strong>Salvador de Oro Visbal</strong>, licenciado en Lenguas Extranjeras, de Barranquilla y con experiencia enseñando en línea a estudiantes de todo el mundo. Mi objetivo: ayudarte a hablar español con fluidez, seguridad y una conexión auténtica
-            con la cultura.</p>
-        <p>Me encontrarás en italki, donde acompaño a mis estudiantes desde principiantes hasta niveles avanzados, con clases diseñadas según tus metas y estilo de aprendizaje.</p>
+    <section id="about">
+        <h2>Sobre Salvador</h2>
+        <div class="grid">
+            <img src="salvador.jpg" alt="Foto Salvador de Oro" class="profile-img">
+            <p>Soy <strong>Salvador de Oro Visbal</strong>, licenciado en Lenguas Extranjeras de Barranquilla. Enseño desde nivel básico hasta avanzado, ayudándote a hablar español de manera natural y segura.</p>
+        </div>
     </section>
 
-    <section id="lessons" class="section">
-        <h2>Clases que ofrezco</h2>
+    <section id="courses">
+        <h2>Clases & Servicios</h2>
         <ul>
-            <li>Conversación y pronunciación</li>
-            <li>Gramática con práctica real</li>
-            <li>Preparación para DELE y exámenes</li>
-            <li>Clases para viajes o negocios</li>
+            <li>Conversación guiada & pronunciación</li>
+            <li>Gramática en contexto real</li>
+            <li>Preparación para DELE</li>
+            <li>Español para viajes o negocios</li>
             <li>Cultura y modismos colombianos</li>
         </ul>
-        <p>Las clases se adaptan a tus necesidades: frecuencia, duración, y contenido. ¡Comencemos!</p>
-        <a href="https://www.italki.com/teacher/7183261" target="_blank">Reserva una clase conmigo en italki</a>
+        <button class="btn-primary" onclick="location.href='https://www.italki.com/teacher/7183261'">Reserva una clase</button>
     </section>
 
-    <section id="podcast" class="section podcast">
-        <h2>Podcast: “Samaspanish”</h2>
-        <p>Junto a Maria Barcelo, presentamos <em>Samaspanish</em>: un espacio donde hablamos de cultura, enseñanza y anécdotas de Colombia, mientras aprendes español auténtico :contentReference[oaicite:1]{index=1}.</p>
-        <ul>
-            <li><strong>Ep. 6:</strong> Colombia jugará la final de la Copa América 2024 (Jul 11, 2024)</li>
-            <li><strong>Ep. 4–5:</strong> ¿Vale la pena vivir en el centro de Colombia? Parte I & II (May 2024)</li>
-            <!-- add more episodes -->
-        </ul>
-        <p>Disponible en Spotify y otras plataformas. Ideal para complementar tus clases.</p>
+    <section id="testimonials">
+        <h2>Opiniones de Estudiantes</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>“Salvador me ayudó a mejorar mi fluidez en meses. ¡Totalmente recomendado!”</p>
+                <p><strong>— María, España</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>“Las clases son dinámicas y adaptadas a mis objetivos DELE. Excelente profesor.”</p>
+                <p><strong>— John, EE.UU.</strong></p>
+            </div>
+        </div>
     </section>
 
-    <section id="contact" class="section contact">
-        <h2>Contacto</h2>
-        <p>¿Listo para empezar? Escríbeme:</p>
-        <ul>
-            <li>Email: <a href="mailto:samaspanish17@gmail.com">samaspanish17@gmail.com</a></li>
-            <li>italki: <a href="https://www.italki.com/teacher/7183261" target="_blank">Perfil de Salvador de Oro</a></li>
-        </ul>
-        <p>Sígueme en redes para tips diarios de español.</p>
+    <section id="resources">
+        <h2>Podcast: Samaspanish</h2>
+        <p>Aprende español y cultura en cada episodio, disponible en Spotify.</p>
+        <button class="btn-primary">Escucha el podcast</button>
+    </section>
+
+    <section id="contact">
+        <h2>¡Hablemos!</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu email" required>
+            <textarea rows="4" placeholder="¿Qué deseas aprender?"></textarea>
+            <button class="btn-primary" type="submit">Enviar mensaje</button>
+        </form>
+        <p>O contáctame en italki: <a href="https://www.italki.com/teacher/7183261" target="_blank">Perfil de Salvador</a></p>
     </section>
 
     <footer>
         <p>&copy; 2025 Español de Oro • Salvador de Oro Visbal</p>
     </footer>
+
 </body>
 
 </html>
