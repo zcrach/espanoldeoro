@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,101 +9,118 @@
 </head>
 
 <body>
-
-    <header>
-        <h1>Español de Oro</h1>
-        <p>Con Salvador de Oro – Domina el español auténtico y cultural</p>
+    <header class="eco-header">
+        <div class="eco-header-content">
+            <h1>Español de Oro</h1>
+            <p>Con Salvador de Oro – Domina el español auténtico y cultural</p>
+        </div>
+        <nav class="eco-nav">
+            <a href="#about">About Me</a>
+            <a href="#courses">Classes</a>
+            <a href="#book">Book</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#resources">Podcast</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#about">Sobre mí</a>
-        <a href="#courses">Clases</a>
-        <a href="#testimonials">Opiniones</a>
-        <a href="#resources">Podcast</a>
-        <a href="#contact">Contacto</a>
-    </nav>
-
-    <section class="hero">
-        <h1>Aprende español con fluidez y confianza</h1>
-        <p>Clases personalizadas, cultura colombiana y preparación DELE</p>
-        <button class="btn-primary" onclick="location.href='#contact'">Reserva tu clase de prueba</button>
-    </section>
-
-    <section id="about">
-        <h2>Sobre Salvador</h2>
-        <div class="grid">
-            <img src="salvador.jpg" alt="Foto Salvador de Oro" class="profile-img">
-            <p>Soy <strong>Salvador de Oro Visbal</strong>, licenciado en Lenguas Extranjeras de Barranquilla. Enseño desde nivel básico hasta avanzado, ayudándote a hablar español de manera natural y segura.</p>
+    <section class="eco-hero">
+        <div class="eco-hero-content">
+            <h1 class="eco-hero-main">Español de Oro</h1>
+            <h2 class="eco-hero-sub">Speak Real Spanish. Build Real Confidence.</h2>
+            <p class="eco-hero-desc">Learn with Salvador De Oro – Certified Colombian Spanish Teacher</p>
+            <p class="eco-hero-desc">Whether you're starting from scratch or looking to finally feel confident when you speak, you're in the right place.<br>
+            Forget robotic phrases and awkward textbook grammar. These classes are practical, real, and designed to get you speaking from day one.</p>
+            <ul class="eco-list" style="margin-bottom:2rem;">
+                <li>Personalized lessons tailored to your level and goals</li>
+                <li>Clear, useful grammar in real-life situations</li>
+                <li>Real conversations that build fluency fast</li>
+                <li>A deep dive into Colombian culture, slang, and authentic language</li>
+                <li>DELE exam prep that actually works</li>
+            </ul>
+            <a class="eco-btn eco-btn-primary" href="#book">Book your trial lesson</a>
         </div>
     </section>
 
-    <section id="courses">
-        <h2>Clases & Servicios</h2>
-        <ul>
-            <li>Conversación guiada & pronunciación</li>
-            <li>Gramática en contexto real</li>
-            <li>Preparación para DELE</li>
-            <li>Español para viajes o negocios</li>
-            <li>Cultura y modismos colombianos</li>
-        </ul>
-        <button class="btn-primary" onclick="location.href='https://www.italki.com/teacher/7183261'">Reserva una clase</button>
-    </section>
-
-    <section id="book">
-        <h2>Reserva tu clase de español</h2>
-        <div id="calendly-inline-widget" style="min-width:320px;height:700px;"></div>
-        <p style="text-align:center;margin-top:1rem;">
-            <a href="https://calendly.com/visbal544/clase-de-espanol?month=2025-07" target="_blank" rel="noopener" class="btn-primary">Abrir Calendario en Calendly</a>
-        </p>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-        <script type="text/javascript">
-            window.onload = function() {
-                Calendly.initInlineWidget({
-                    url: 'https://calendly.com/visbal544/clase-de-espanol?month=2025-07',
-                    parentElement: document.getElementById('calendly-inline-widget'),
-                    prefill: {},
-                    utm: {}
-                });
-            };
-        </script>
-    </section>
-
-    <section id="testimonials">
-        <h2>Opiniones de Estudiantes</h2>
-        <div class="testimonials">
-            <div class="testimonial">
-                <p>“Salvador me ayudó a mejorar mi fluidez en meses. ¡Totalmente recomendado!”</p>
-                <p><strong>— María, España</strong></p>
+    <main>
+        <section id="about" class="eco-section eco-about">
+            <div class="eco-about-content">
+                <img src="salvador.jpg" alt="Photo of Salvador De Oro" class="eco-profile-img">
+                <div>
+                    <h2>Meet Your Teacher</h2>
+                    <p>I’m Salvador De Oro — a certified Spanish teacher from Colombia with over 4,900 lessons taught and a degree in Foreign Language Teaching (Spanish, English, and French) from Universidad del Atlántico.</p>
+                    <p>I focus on creating a relaxed, student-centered environment where you’re free to make mistakes, ask questions, and grow naturally. My goal? To get you talking, thinking, and understanding Spanish in a way that feels real — not rehearsed.</p>
+                    <p>I use multimedia tools like videos, audio, articles, and custom exercises to keep lessons engaging and effective. Whether you're a total beginner or a seasoned learner, we’ll build a clear path to fluency, together.</p>
+                </div>
             </div>
-            <div class="testimonial">
-                <p>“Las clases son dinámicas y adaptadas a mis objetivos DELE. Excelente profesor.”</p>
-                <p><strong>— John, EE.UU.</strong></p>
+        </section>
+
+        <section id="courses" class="eco-section eco-courses">
+            <h2>What You’ll Learn</h2>
+            <ul class="eco-list">
+                <li>Guided conversation and natural pronunciation</li>
+                <li>Grammar that makes sense and sticks</li>
+                <li>Spanish for travel, business, and everyday life</li>
+                <li>Colombian expressions, culture, and real-life speaking skills</li>
+                <li>DELE exam preparation from levels A1 to C2</li>
+            </ul>
+        </section>
+
+        <section id="book" class="eco-section eco-book">
+            <h2>Book a Lesson</h2>
+            <p style="margin-bottom:1.5rem;">Take the first step. Book your Spanish class directly on <a href="https://www.italki.com/teacher/7183261" target="_blank" rel="noopener" style="color:var(--eco-green);font-weight:600;">iTalki</a>, or explore availability via Calendly.</p>
+            <div id="calendly-inline-widget" class="eco-book-widget" style="min-width:320px;height:700px;"></div>
+            <div class="eco-book-link">
+                <a href="https://calendly.com/visbal544/clase-de-espanol?month=2025-07" target="_blank" rel="noopener" class="eco-btn eco-btn-primary">Open Calendar in Calendly</a>
             </div>
-        </div>
-    </section>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <script type="text/javascript">
+                window.onload = function () {
+                    Calendly.initInlineWidget({
+                        url: 'https://calendly.com/visbal544/clase-de-espanol?month=2025-07',
+                        parentElement: document.getElementById('calendly-inline-widget'),
+                        prefill: {},
+                        utm: {}
+                    });
+                };
+            </script>
+        </section>
 
-    <section id="resources">
-        <h2>Podcast: Samaspanish</h2>
-        <p>Aprende español y cultura en cada episodio, disponible en Spotify.</p>
-        <button class="btn-primary">Escucha el podcast</button>
-    </section>
+        <section id="testimonials" class="eco-section eco-testimonials">
+            <h2>Student Reviews</h2>
+            <div class="eco-testimonials-list">
+                <div class="eco-testimonial">
+                    <p>“Salvador helped me improve my fluency in just a few months. Highly recommended!”</p>
+                    <span>— María, Spain</span>
+                </div>
+                <div class="eco-testimonial">
+                    <p>“The classes are dynamic and tailored to my DELE goals. Excellent teacher.”</p>
+                    <span>— John, USA</span>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>¡Hablemos!</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="email" placeholder="Tu email" required>
-            <textarea rows="4" placeholder="¿Qué deseas aprender?"></textarea>
-            <button class="btn-primary" type="submit">Enviar mensaje</button>
-        </form>
-        <p>O contáctame en italki: <a href="https://www.italki.com/teacher/7183261" target="_blank">Perfil de Salvador</a>
-        </p>
-    </section>
+        <section id="resources" class="eco-section eco-podcast">
+            <h2>Listen & Learn Anywhere</h2>
+            <p>Check out my podcast, Samaspanish — Spanish learning with cultural insights in every episode.<br>Available now on Spotify.</p>
+            <a href="https://creators.spotify.com/pod/profile/salvador-lenig-de-oro-visbal" target="_blank" rel="noopener" class="eco-btn eco-btn-secondary">Listen on Spotify</a>
+        </section>
 
-    <footer>
+        <section id="contact" class="eco-section eco-contact">
+            <h2>Get in Touch</h2>
+            <p>Have questions? Ready to start? Let’s talk.<br>Fill out the contact form or connect with me on <a href="https://www.italki.com/teacher/7183261" target="_blank" rel="noopener" style="color:var(--eco-green);font-weight:600;">iTalki</a>.</p>
+            <form class="eco-contact-form">
+                <input type="text" placeholder="Your name" required>
+                <input type="email" placeholder="Your email" required>
+                <textarea rows="4" placeholder="What would you like to learn?"></textarea>
+                <button class="eco-btn eco-btn-primary" type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="eco-footer">
         <p>&copy; 2025 Español de Oro • Salvador de Oro Visbal</p>
     </footer>
-
 </body>
 
 </html>
