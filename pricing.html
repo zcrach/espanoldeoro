@@ -9,20 +9,17 @@
 </head>
 
 <body>
-    <header class="eco-header">
-        <div class="eco-header-content">
-            <h1>Español de Oro</h1>
-            <p>Speak Real Spanish. Build Real Confidence.</p>
-        </div>
-        <nav class="eco-nav">
-            <a href="index.html">About Me</a>
-            <a href="pricing.html">Pricing & Classes</a>
-            <a href="learning.html">Learning Spanish</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#resources">Podcast</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <div id="header-include"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-include').innerHTML = data;
+            })
+            .catch(() => {
+                document.getElementById('header-include').innerHTML = '<header class="eco-header"><div class="eco-header-content"><h1>Español de Oro</h1></div></header>';
+            });
+    </script>
     <main>
         <section class="eco-section">
             <h2>Pricing & Classes</h2>

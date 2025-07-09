@@ -15,6 +15,9 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-include').innerHTML = data;
+            })
+            .catch(() => {
+                document.getElementById('header-include').innerHTML = '<header class="eco-header"><div class="eco-header-content"><h1>Español de Oro</h1></div></header>';
             });
     </script>
 

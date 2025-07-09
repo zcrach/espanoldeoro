@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Español de Oro • Spanish Material</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="header-include"></div>
+    <script>
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-include').innerHTML = data;
+        })
+        .catch(() => {
+            document.getElementById('header-include').innerHTML = '<header class="eco-header"><div class="eco-header-content"><h1>Español de Oro</h1></div></header>';
+        });
+    </script>
+    <main>
+        <section class="eco-section">
+            <h2>Spanish Material</h2>
+            <p>Explore a variety of resources to support your Spanish learning journey. Here you'll find materials for all levels, from beginner to advanced, including grammar guides, vocabulary lists, practice exercises, and more.</p>
+            <ul class="eco-list">
+                <li><strong>CEFR Level Guides:</strong> A1, A2, B1, B2, C1, C2 explanations and checklists</li>
+                <li><strong>Downloadable Worksheets:</strong> PDF grammar and vocabulary sheets</li>
+                <li><strong>Audio & Video Practice:</strong> Listening and pronunciation exercises</li>
+                <li><strong>Sample DELE Exam Tasks</strong></li>
+                <li><strong>Useful Links:</strong> Recommended apps, dictionaries, and online tools</li>
+            </ul>
+            <p>More downloadable and interactive materials coming soon! If you need something specific, <a href="mailto:salvadordeoro@gmail.com" style="color:var(--eco-green);font-weight:600;">contact me</a>.</p>
+        </section>
+    </main>
+    <footer class="eco-footer">
+        <p>&copy; 2025 Español de Oro • Salvador de Oro Visbal</p>
+    </footer>
+</body>
+</html>
