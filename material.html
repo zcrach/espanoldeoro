@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Español de Oro • Spanish Material</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div id="header-include"></div>
     <script>
-    fetch('header.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('header-include').innerHTML = data;
-        })
-        .catch(() => {
-            document.getElementById('header-include').innerHTML = '<header class="eco-header"><div class="eco-header-content"><h1>Español de Oro</h1></div></header>';
-        });
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-include').innerHTML = data;
+            })
+            .catch(() => {
+                document.getElementById('header-include').innerHTML = '<header class="eco-header"><div class="eco-header-content"><h1>Español de Oro</h1></div></header>';
+            });
     </script>
     <main>
         <section class="eco-section">
@@ -36,4 +38,5 @@
         <p>&copy; 2025 Español de Oro • Salvador de Oro Visbal</p>
     </footer>
 </body>
+
 </html>
