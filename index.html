@@ -9,28 +9,22 @@
 </head>
 
 <body>
-    <header class="eco-header">
-        <div class="eco-header-content">
-            <h1>Español de Oro</h1>
-            <p>Con Salvador de Oro – Domina el español auténtico y cultural</p>
-        </div>
-        <nav class="eco-nav">
-            <a href="#about">About Me</a>
-            <a href="#courses">Classes</a>
-            <a href="#book">Book</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#resources">Podcast</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <div id="header-include"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-include').innerHTML = data;
+            });
+    </script>
 
     <section class="eco-hero">
         <div class="eco-hero-content">
             <h1 class="eco-hero-main">Español de Oro</h1>
             <h2 class="eco-hero-sub">Speak Real Spanish. Build Real Confidence.</h2>
-            <p class="eco-hero-desc">Learn with Salvador De Oro – Certified Colombian Spanish Teacher</p>
-            <p class="eco-hero-desc">Whether you're starting from scratch or looking to finally feel confident when you speak, you're in the right place.<br>
-            Forget robotic phrases and awkward textbook grammar. These classes are practical, real, and designed to get you speaking from day one.</p>
+            <p class="eco-hero-desc">Learn with Salvador De Oro - Certified Colombian Spanish Teacher</p>
+            <p class="eco-hero-desc">Whether you're starting from scratch or looking to finally feel confident when you speak, you're in the right place.<br> Forget robotic phrases and awkward textbook grammar. These classes are practical, real, and designed to get you speaking
+                from day one.</p>
             <ul class="eco-list" style="margin-bottom:2rem;">
                 <li>Personalized lessons tailored to your level and goals</li>
                 <li>Clear, useful grammar in real-life situations</li>
@@ -47,8 +41,8 @@
             <div class="eco-about-content">
                 <img src="salvador.jpg" alt="Photo of Salvador De Oro" class="eco-profile-img">
                 <div>
-                    <h2>Meet Your Teacher</h2>
-                    <p>I’m Salvador De Oro — a certified Spanish teacher from Colombia with over 4,900 lessons taught and a degree in Foreign Language Teaching (Spanish, English, and French) from Universidad del Atlántico.</p>
+                    <h2>About me</h2>
+                    <p>I’m Salvador De Oro, a certified Spanish teacher from Colombia with over 4,900 lessons taught and a degree in Foreign Language Teaching (Spanish, English, and French) from Universidad del Atlántico.</p>
                     <p>I focus on creating a relaxed, student-centered environment where you’re free to make mistakes, ask questions, and grow naturally. My goal? To get you talking, thinking, and understanding Spanish in a way that feels real — not rehearsed.</p>
                     <p>I use multimedia tools like videos, audio, articles, and custom exercises to keep lessons engaging and effective. Whether you're a total beginner or a seasoned learner, we’ll build a clear path to fluency, together.</p>
                 </div>
@@ -75,7 +69,7 @@
             </div>
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
             <script type="text/javascript">
-                window.onload = function () {
+                window.onload = function() {
                     Calendly.initInlineWidget({
                         url: 'https://calendly.com/visbal544/clase-de-espanol?month=2025-07',
                         parentElement: document.getElementById('calendly-inline-widget'),
