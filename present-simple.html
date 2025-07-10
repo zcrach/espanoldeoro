@@ -22,243 +22,272 @@
     </script>
     <main>
         <section class="eco-section">
-            <h2>El Presente Simple</h2>
-            <div style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;margin-bottom:1.5rem;">
-                <div style="background:var(--eco-light);padding:1rem 2rem;border-radius:1rem;box-shadow:0 2px 8px #0001;">
-                    <span style="font-size:1.5rem;color:var(--eco-olive);font-weight:600;">Yo <span style="color:#1e88e5;font-weight:700;">hablo</span> español, ¿y tú?</span>
+            <h2 class="eco-h2">El Presente Simple</h2>
+            <div class="eco-intro-row">
+                <div class="eco-intro-phrase">
+                    <span>Yo <span class="eco-verb-main">hablo</span> español, ¿y tú?</span>
                 </div>
-                <div style="background:var(--eco-green-light,#eafaf1);color:var(--eco-green,#388e3c);padding:0.5rem 1.2rem;border-radius:1rem;font-weight:600;">AHORA</div>
             </div>
-            <h3 style="color:var(--eco-green,#388e3c);margin-top:2rem;">Regular Verbs</h3>
-            <div style="overflow-x:auto;margin-bottom:1.5rem;">
-                <table class="eco-table" style="min-width:600px;text-align:center;border-collapse:collapse;">
+            <h3 class="eco-h3">Regular Verbs</h3>
+            <div class="eco-verb-table-wrap">
+                <table class="eco-table eco-conj-table">
                     <thead>
-                        <tr style="background:var(--eco-olive-light,#f4f7e7);">
-                            <th>SUBJECT</th>
-                            <th>-AR (HABLAR)</th>
-                            <th>-ER (COMER)</th>
-                            <th>-IR (VIVIR)</th>
+                        <tr class="eco-conj-header-row">
+                            <th class="eco-conj-header-subject">SUBJECT</th>
+                            <th class="eco-conj-header-ar">-AR <span class="eco-conj-header-verb">(HABLAR)</span></th>
+                            <th class="eco-conj-header-er">-ER <span class="eco-conj-header-verb">(COMER)</span></th>
+                            <th class="eco-conj-header-ir">-IR <span class="eco-conj-header-verb">(VIVIR)</span></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>YO</td>
-                            <td><span style="color:#e53935;font-weight:600;">HABLO</span></td>
-                            <td><span style="color:#e53935;font-weight:600;">COMO</span></td>
-                            <td><span style="color:#e53935;font-weight:600;">VIVO</span></td>
+                            <td><span class="eco-stem">HABL</span><span class="eco-ending">O</span></td>
+                            <td><span class="eco-stem">COM</span><span class="eco-ending">O</span></td>
+                            <td><span class="eco-stem">VIV</span><span class="eco-ending">O</span></td>
                         </tr>
                         <tr>
                             <td>TÚ</td>
-                            <td><span style="color:#e53935;font-weight:600;">HABLAS</span></td>
-                            <td><span style="color:#e53935;font-weight:600;">COMES</span></td>
-                            <td><span style="color:#e53935;font-weight:600;">VIVES</span></td>
+                            <td><span class="eco-stem">HABL</span><span class="eco-ending">AS</span></td>
+                            <td><span class="eco-stem">COM</span><span class="eco-ending">ES</span></td>
+                            <td><span class="eco-stem">VIV</span><span class="eco-ending">ES</span></td>
                         </tr>
                         <tr>
                             <td>VOS</td>
-                            <td><span style="color:#e53935;font-weight:600;">HABLÁS</span></td>
-                            <td><span style="color:#e53935;font-weight:600;">COMÉS</span></td>
-                            <td><span style="color:#e53935;font-weight:600;">VIVÍS</span></td>
+                            <td><span class="eco-stem">HABL</span><span class="eco-ending">ÁS</span></td>
+                            <td><span class="eco-stem">COM</span><span class="eco-ending">ÉS</span></td>
+                            <td><span class="eco-stem">VIV</span><span class="eco-ending">ÍS</span></td>
                         </tr>
                         <tr>
                             <td>ÉL – ELLA – USTED</td>
-                            <td>HABLA</td>
-                            <td>COME</td>
-                            <td>VIVE</td>
+                            <td><span class="eco-stem">HABL</span><span class="eco-ending">A</span></td>
+                            <td><span class="eco-stem">COM</span><span class="eco-ending">E</span></td>
+                            <td><span class="eco-stem">VIV</span><span class="eco-ending">E</span></td>
                         </tr>
                         <tr>
                             <td>NOSOTROS (AS)</td>
-                            <td><span style="color:#1e88e5;font-weight:600;">HABLAMOS</span></td>
-                            <td><span style="color:#1e88e5;font-weight:600;">COMEMOS</span></td>
-                            <td><span style="color:#1e88e5;font-weight:600;">VIVIMOS</span></td>
+                            <td><span class="eco-stem">HABL</span><span class="eco-ending">AMOS</span></td>
+                            <td><span class="eco-stem">COM</span><span class="eco-ending">EMOS</span></td>
+                            <td><span class="eco-stem">VIV</span><span class="eco-ending">IMOS</span></td>
                         </tr>
                         <tr>
                             <td>VOSOTROS (AS)</td>
-                            <td>HABLÁIS</td>
-                            <td>COMÉIS</td>
-                            <td>VIVÍS</td>
+                            <td><span class="eco-stem">HABL</span><span class="eco-ending">ÁIS</span></td>
+                            <td><span class="eco-stem">COM</span><span class="eco-ending">ÉIS</span></td>
+                            <td><span class="eco-stem">VIV</span><span class="eco-ending">ÍS</span></td>
                         </tr>
                         <tr>
                             <td>ELLOS (AS) – USTEDES</td>
-                            <td>HABLAN</td>
-                            <td>COMEN</td>
-                            <td>VIVEN</td>
+                            <td><span class="eco-stem">HABL</span><span class="eco-ending">AN</span></td>
+                            <td><span class="eco-stem">COM</span><span class="eco-ending">EN</span></td>
+                            <td><span class="eco-stem">VIV</span><span class="eco-ending">EN</span></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div style="display:flex;flex-wrap:wrap;gap:2.5rem;margin-bottom:2.2rem;justify-content:space-between;">
-                <div style="flex:1;min-width:220px;max-width:340px;">
-                    <div style="font-size:1.08rem;font-weight:700;color:var(--eco-olive,#7a8b2f);margin-bottom:0.5rem;letter-spacing:0.01em;">-AR Verbs <span style='color:#888;font-weight:400;'>(to ...)</span></div>
-                    <ul style="font-size:1.05rem;line-height:1.7;list-style:none;padding:0;margin:0;">
-                        <li><b>BUSCAR</b> <span style='color:#888;'>(to look for)</span></li>
-                        <li><b>CAMINAR</b> <span style='color:#888;'>(to walk)</span></li>
-                        <li><b>COMPRAR</b> <span style='color:#888;'>(to buy)</span></li>
-                        <li><b>ESCUCHAR</b> <span style='color:#888;'>(to listen)</span></li>
-                        <li><b>ESTUDIAR</b> <span style='color:#888;'>(to study)</span></li>
-                        <li><b>HABLAR</b> <span style='color:#888;'>(to speak)</span></li>
-                        <li><b>LLAMAR(SE)</b> <span style='color:#888;'>(to call (oneself))</span></li>
-                        <li><b>PRACTICAR</b> <span style='color:#888;'>(to practice)</span></li>
-                        <li><b>TRABAJAR</b> <span style='color:#888;'>(to work)</span></li>
-                        <li><b>USAR</b> <span style='color:#888;'>(to use)</span></li>
+            <div class="eco-verb-list-row">
+                <div class="eco-verb-list-col">
+                    <div class="eco-verb-list-title eco-verb-list-title-ar">-AR Verbs <span class='eco-verb-list-hint'>(to ...)</span></div>
+                    <ul class="eco-verb-list">
+                        <li><b>BUSCAR</b> <span class='eco-verb-tt' tabindex="0" title="to look for">(to look for)</span></li>
+                        <li><b>CAMINAR</b> <span class='eco-verb-tt' tabindex="0" title="to walk">(to walk)</span></li>
+                        <li><b>COMPRAR</b> <span class='eco-verb-tt' tabindex="0" title="to buy">(to buy)</span></li>
+                        <li><b>ESCUCHAR</b> <span class='eco-verb-tt' tabindex="0" title="to listen">(to listen)</span></li>
+                        <li><b>ESTUDIAR</b> <span class='eco-verb-tt' tabindex="0" title="to study">(to study)</span></li>
+                        <li><b>HABLAR</b> <span class='eco-verb-tt' tabindex="0" title="to speak">(to speak)</span></li>
+                        <li><b>LLAMAR(SE)</b> <span class='eco-verb-tt' tabindex="0" title="to call (oneself)">(to call (oneself))</span></li>
+                        <li><b>PRACTICAR</b> <span class='eco-verb-tt' tabindex="0" title="to practice">(to practice)</span></li>
+                        <li><b>TRABAJAR</b> <span class='eco-verb-tt' tabindex="0" title="to work">(to work)</span></li>
+                        <li><b>USAR</b> <span class='eco-verb-tt' tabindex="0" title="to use">(to use)</span></li>
                     </ul>
                 </div>
-                <div style="flex:1;min-width:220px;max-width:340px;">
-                    <div style="font-size:1.08rem;font-weight:700;color:var(--eco-olive,#7a8b2f);margin-bottom:0.5rem;letter-spacing:0.01em;">-ER Verbs <span style='color:#888;font-weight:400;'>(to ...)</span></div>
-                    <ul style="font-size:1.05rem;line-height:1.7;list-style:none;padding:0;margin:0;">
-                        <li><b>APRENDER</b> <span style='color:#888;'>(to learn)</span></li>
-                        <li><b>BEER</b> <span style='color:#888;'>(to drink)</span></li>
-                        <li><b>COMER</b> <span style='color:#888;'>(to eat)</span></li>
-                        <li><b>COMPRENDER</b> <span style='color:#888;'>(to understand)</span></li>
-                        <li><b>CREER</b> <span style='color:#888;'>(to believe)</span></li>
-                        <li><b>LEER</b> <span style='color:#888;'>(to read)</span></li>
-                        <li><b>VENDER</b> <span style='color:#888;'>(to sell)</span></li>
-                        <li><b>VER</b> <span style='color:#888;'>(to see)</span></li>
+                <div class="eco-verb-list-col">
+                    <div class="eco-verb-list-title eco-verb-list-title-er">-ER Verbs <span class='eco-verb-list-hint'>(to ...)</span></div>
+                    <ul class="eco-verb-list">
+                        <li><b>APRENDER</b> <span class='eco-verb-tt' tabindex="0" title="to learn">(to learn)</span></li>
+                        <li><b>BEER</b> <span class='eco-verb-tt' tabindex="0" title="to drink">(to drink)</span></li>
+                        <li><b>COMER</b> <span class='eco-verb-tt' tabindex="0" title="to eat">(to eat)</span></li>
+                        <li><b>COMPRENDER</b> <span class='eco-verb-tt' tabindex="0" title="to understand">(to understand)</span></li>
+                        <li><b>CREER</b> <span class='eco-verb-tt' tabindex="0" title="to believe">(to believe)</span></li>
+                        <li><b>LEER</b> <span class='eco-verb-tt' tabindex="0" title="to read">(to read)</span></li>
+                        <li><b>VENDER</b> <span class='eco-verb-tt' tabindex="0" title="to sell">(to sell)</span></li>
+                        <li><b>VER</b> <span class='eco-verb-tt' tabindex="0" title="to see">(to see)</span></li>
                     </ul>
                 </div>
-                <div style="flex:1;min-width:220px;max-width:340px;">
-                    <div style="font-size:1.08rem;font-weight:700;color:var(--eco-olive,#7a8b2f);margin-bottom:0.5rem;letter-spacing:0.01em;">-IR Verbs <span style='color:#888;font-weight:400;'>(to ...)</span></div>
-                    <ul style="font-size:1.05rem;line-height:1.7;list-style:none;padding:0;margin:0;">
-                        <li><b>ABRIR</b> <span style='color:#888;'>(to open)</span></li>
-                        <li><b>ASISTIR</b> <span style='color:#888;'>(to attend)</span></li>
-                        <li><b>COMPARTIR</b> <span style='color:#888;'>(to share)</span></li>
-                        <li><b>ESCRIBIR</b> <span style='color:#888;'>(to write)</span></li>
-                        <li><b>RECIBIR</b> <span style='color:#888;'>(to receive)</span></li>
-                        <li><b>SUBIR</b> <span style='color:#888;'>(to go up)</span></li>
-                        <li><b>VIVIR</b> <span style='color:#888;'>(to live)</span></li>
+                <div class="eco-verb-list-col">
+                    <div class="eco-verb-list-title eco-verb-list-title-ir">-IR Verbs <span class='eco-verb-list-hint'>(to ...)</span></div>
+                    <ul class="eco-verb-list">
+                        <li><b>ABRIR</b> <span class='eco-verb-tt' tabindex="0" title="to open">(to open)</span></li>
+                        <li><b>ASISTIR</b> <span class='eco-verb-tt' tabindex="0" title="to attend">(to attend)</span></li>
+                        <li><b>COMPARTIR</b> <span class='eco-verb-tt' tabindex="0" title="to share">(to share)</span></li>
+                        <li><b>ESCRIBIR</b> <span class='eco-verb-tt' tabindex="0" title="to write">(to write)</span></li>
+                        <li><b>RECIBIR</b> <span class='eco-verb-tt' tabindex="0" title="to receive">(to receive)</span></li>
+                        <li><b>SUBIR</b> <span class='eco-verb-tt' tabindex="0" title="to go up">(to go up)</span></li>
+                        <li><b>VIVIR</b> <span class='eco-verb-tt' tabindex="0" title="to live">(to live)</span></li>
                     </ul>
                 </div>
             </div>
-            <p style="font-size:1.1rem;background:#fffbe6;padding:0.7rem 1.2rem;border-left:4px solid var(--eco-orange,#ff9800);margin-bottom:1.5rem;">
-                <strong>The <span style="color:var(--eco-orange,#ff9800);">Present Simple</span> describes an action that happens in the present moment.</strong>
-            </p>
-            <h3 style="margin-top:2.5rem;color:var(--eco-orange,#ff9800);">Let's Practice</h3>
-            <div id="practice-area" style="background:var(--eco-light,#f9fbe7);padding:1.2rem 1.5rem;border-radius:1rem;margin-bottom:2rem;">
-                <strong>1. Drag the verbs on the right into the correct slot in the tables on the left:</strong>
-                <div id="dragdrop-game" style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.7rem;margin-top:0.7rem;align-items:start;justify-content:center;max-width:100vw;overflow-x:unset;">
-                    <div style="grid-column:1;min-width:170px;">
-                        <table class="eco-table compact-table drag-table" style="margin-bottom:0.7rem;min-width:150px;width:100%;">
-                            <caption>PRACTICAR</caption>
-                            <tr>
-                                <th>YO</th>
-                                <td class="dropzone" data-answer="practico"></td>
-                                <td><span class="draggable-word" draggable="true">practico</span></td>
-                            </tr>
-                            <tr>
-                                <th>TÚ</th>
-                                <td class="dropzone" data-answer="practicas"></td>
-                                <td><span class="draggable-word" draggable="true">practicas</span></td>
-                            </tr>
-                            <tr>
-                                <th>VOS</th>
-                                <td class="dropzone" data-answer="practicás"></td>
-                                <td><span class="draggable-word" draggable="true">practicás</span></td>
-                            </tr>
-                            <tr>
-                                <th>ÉL</th>
-                                <td class="dropzone" data-answer="practica"></td>
-                                <td><span class="draggable-word" draggable="true">practica</span></td>
-                            </tr>
-                            <tr>
-                                <th>NOS</th>
-                                <td class="dropzone" data-answer="practicamos"></td>
-                                <td><span class="draggable-word" draggable="true">practicamos</span></td>
-                            </tr>
-                            <tr>
-                                <th>VOS.</th>
-                                <td class="dropzone" data-answer="practicáis"></td>
-                                <td><span class="draggable-word" draggable="true">practicáis</span></td>
-                            </tr>
-                            <tr>
-                                <th>ELLOS</th>
-                                <td class="dropzone" data-answer="practican"></td>
-                                <td><span class="draggable-word" draggable="true">practican</span></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div style="grid-column:2;min-width:170px;">
-                        <table class="eco-table compact-table drag-table" style="margin-bottom:0.7rem;min-width:150px;width:100%;">
-                            <caption>APRENDER</caption>
-                            <tr>
-                                <th>YO</th>
-                                <td class="dropzone" data-answer="aprendo"></td>
-                                <td><span class="draggable-word" draggable="true">aprendo</span></td>
-                            </tr>
-                            <tr>
-                                <th>TÚ</th>
-                                <td class="dropzone" data-answer="aprendes"></td>
-                                <td><span class="draggable-word" draggable="true">aprendes</span></td>
-                            </tr>
-                            <tr>
-                                <th>VOS</th>
-                                <td class="dropzone" data-answer="aprendés"></td>
-                                <td><span class="draggable-word" draggable="true">aprendés</span></td>
-                            </tr>
-                            <tr>
-                                <th>ÉL</th>
-                                <td class="dropzone" data-answer="aprende"></td>
-                                <td><span class="draggable-word" draggable="true">aprende</span></td>
-                            </tr>
-                            <tr>
-                                <th>NOS</th>
-                                <td class="dropzone" data-answer="aprendemos"></td>
-                                <td><span class="draggable-word" draggable="true">aprendemos</span></td>
-                            </tr>
-                            <tr>
-                                <th>VOS.</th>
-                                <td class="dropzone" data-answer="aprendéis"></td>
-                                <td><span class="draggable-word" draggable="true">aprendéis</span></td>
-                            </tr>
-                            <tr>
-                                <th>ELLOS</th>
-                                <td class="dropzone" data-answer="aprenden"></td>
-                                <td><span class="draggable-word" draggable="true">aprenden</span></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div style="grid-column:3;min-width:170px;">
-                        <table class="eco-table compact-table drag-table" style="margin-bottom:0.7rem;min-width:150px;width:100%;">
-                            <caption>ABRIR</caption>
-                            <tr>
-                                <th>YO</th>
-                                <td class="dropzone" data-answer="abro"></td>
-                                <td><span class="draggable-word" draggable="true">abro</span></td>
-                            </tr>
-                            <tr>
-                                <th>TÚ</th>
-                                <td class="dropzone" data-answer="abres"></td>
-                                <td><span class="draggable-word" draggable="true">abres</span></td>
-                            </tr>
-                            <tr>
-                                <th>VOS</th>
-                                <td class="dropzone" data-answer="abrís"></td>
-                                <td><span class="draggable-word" draggable="true">abrís</span></td>
-                            </tr>
-                            <tr>
-                                <th>ÉL</th>
-                                <td class="dropzone" data-answer="abre"></td>
-                                <td><span class="draggable-word" draggable="true">abre</span></td>
-                            </tr>
-                            <tr>
-                                <th>NOS</th>
-                                <td class="dropzone" data-answer="abrimos"></td>
-                                <td><span class="draggable-word" draggable="true">abrimos</span></td>
-                            </tr>
-                            <tr>
-                                <th>VOS.</th>
-                                <td class="dropzone" data-answer="abrís"></td>
-                                <td><span class="draggable-word" draggable="true">abrís</span></td>
-                            </tr>
-                            <tr>
-                                <th>ELLOS</th>
-                                <td class="dropzone" data-answer="abren"></td>
-                                <td><span class="draggable-word" draggable="true">abren</span></td>
-                            </tr>
-                        </table>
+            <div class="eco-explanation-box">
+                <strong>The <span class="eco-explanation-key">Present Simple</span> describes an action that happens in the present moment.</strong>
+            </div>
+            <div class="eco-example-sentences">
+                <div class="eco-example-title">Examples in context:</div>
+                <ul>
+                    <li><b>Yo estudio español todos los días.</b> <span class="eco-example-tt">I study Spanish every day.</span></li>
+                    <li><b>¿Tú comes verduras?</b> <span class="eco-example-tt">Do you eat vegetables?</span></li>
+                    <li><b>Nosotros vivimos en Colombia.</b> <span class="eco-example-tt">We live in Colombia.</span></li>
+                </ul>
+            </div>
+            <h3 class="eco-h3 eco-practice-title">Practice: Complete the conjugation</h3>
+            <div id="eco-mascot" aria-hidden="true" style="text-align:center;margin-bottom:0.7em;">
+                <img src="salvador.jpg" alt="Español de Oro Mascot" style="width:70px;height:70px;border-radius:50%;box-shadow:0 2px 8px #0002;animation:eco-bounce 2.5s infinite;" onerror="this.style.display='none';this.nextElementSibling.style.display='none';document.getElementById('eco-mascot-fallback').style.display='block';">
+                <div id="eco-mascot-fallback" style="display:none;font-size:3em;line-height:1;" aria-label="Mascot">🦜</div>
+                <div style="font-size:1.1em;color:#7a8b2f;font-weight:600;">¡Vamos! <span aria-hidden="true">🎉</span></div>
+            </div>
+            <div id="eco-progress-bar" aria-label="Progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="21" style="height:18px;background:#e0e0e0;border-radius:1em;overflow:hidden;margin:0.7em 0 1em 0;max-width:420px;margin-left:auto;margin-right:auto;">
+                <div id="eco-progress-inner" style="height:100%;width:0%;background:linear-gradient(90deg,#7a8b2f,#1e88e5);transition:width 0.4s;"></div>
+            </div>
+            <div id="eco-stars" aria-label="Stars" style="text-align:center;font-size:1.5em;margin-bottom:0.5em;">
+                <span class="eco-star" aria-hidden="true">☆</span><span class="eco-star" aria-hidden="true">☆</span><span class="eco-star" aria-hidden="true">☆</span>
+            </div>
+            <div id="eco-confetti" aria-hidden="true" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:9999;"></div>
+            <div id="practice-area" class="eco-practice-area">
+                <strong class="eco-practice-instructions">Complete the verb conjugation by placing the correct form into each subject row. Hover for English translation.</strong>
+                <div id="dragdrop-game" class="eco-dragdrop-game">
+                    <div style="display:flex;flex-wrap:wrap;align-items:flex-start;gap:1.5em 1em;">
+                        <div style="grid-column:1;min-width:170px;">
+                            <div class="eco-table-caption-bar eco-table-caption-ar">PRACTICAR</div>
+                            <table class="eco-table compact-table drag-table" style="margin-bottom:0.7rem;min-width:150px;width:100%;">
+                                <tr>
+                                    <th>YO</th>
+                                    <td class="dropzone" data-answer="practico"></td>
+                                </tr>
+                                <tr>
+                                    <th>TÚ</th>
+                                    <td class="dropzone" data-answer="practicas"></td>
+                                </tr>
+                                <tr>
+                                    <th>VOS</th>
+                                    <td class="dropzone" data-answer="practicás"></td>
+                                </tr>
+                                <tr>
+                                    <th>ÉL</th>
+                                    <td class="dropzone" data-answer="practica"></td>
+                                </tr>
+                                <tr>
+                                    <th>NOS</th>
+                                    <td class="dropzone" data-answer="practicamos"></td>
+                                </tr>
+                                <tr>
+                                    <th>VOS.</th>
+                                    <td class="dropzone" data-answer="practicáis"></td>
+                                </tr>
+                                <tr>
+                                    <th>ELLOS</th>
+                                    <td class="dropzone" data-answer="practican"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div style="grid-column:2;min-width:170px;">
+                            <div class="eco-table-caption-bar eco-table-caption-er">APRENDER</div>
+                            <table class="eco-table compact-table drag-table" style="margin-bottom:0.7rem;min-width:150px;width:100%;">
+                                <tr>
+                                    <th>YO</th>
+                                    <td class="dropzone" data-answer="aprendo"></td>
+                                </tr>
+                                <tr>
+                                    <th>TÚ</th>
+                                    <td class="dropzone" data-answer="aprendes"></td>
+                                </tr>
+                                <tr>
+                                    <th>VOS</th>
+                                    <td class="dropzone" data-answer="aprendés"></td>
+                                </tr>
+                                <tr>
+                                    <th>ÉL</th>
+                                    <td class="dropzone" data-answer="aprende"></td>
+                                </tr>
+                                <tr>
+                                    <th>NOS</th>
+                                    <td class="dropzone" data-answer="aprendemos"></td>
+                                </tr>
+                                <tr>
+                                    <th>VOS.</th>
+                                    <td class="dropzone" data-answer="aprendéis"></td>
+                                </tr>
+                                <tr>
+                                    <th>ELLOS</th>
+                                    <td class="dropzone" data-answer="aprenden"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div style="grid-column:3;min-width:170px;">
+                            <div class="eco-table-caption-bar eco-table-caption-ir">ABRIR</div>
+                            <table class="eco-table compact-table drag-table" style="margin-bottom:0.7rem;min-width:150px;width:100%;">
+                                <tr>
+                                    <th>YO</th>
+                                    <td class="dropzone" data-answer="abro"></td>
+                                </tr>
+                                <tr>
+                                    <th>TÚ</th>
+                                    <td class="dropzone" data-answer="abres"></td>
+                                </tr>
+                                <tr>
+                                    <th>VOS</th>
+                                    <td class="dropzone" data-answer="abrís"></td>
+                                </tr>
+                                <tr>
+                                    <th>ÉL</th>
+                                    <td class="dropzone" data-answer="abre"></td>
+                                </tr>
+                                <tr>
+                                    <th>NOS</th>
+                                    <td class="dropzone" data-answer="abrimos"></td>
+                                </tr>
+                                <tr>
+                                    <th>VOS.</th>
+                                    <td class="dropzone" data-answer="abrís"></td>
+                                </tr>
+                                <tr>
+                                    <th>ELLOS</th>
+                                    <td class="dropzone" data-answer="abren"></td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
-                <div id="practice-feedback" style="margin-top:1rem;font-weight:600;"></div>
+                <div id="draggables" style="display:flex;flex-wrap:wrap;gap:0.5em 1em;justify-content:center;margin:1.2em 0 0 0;">
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">practic</span><span class="eco-ending">o</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">practic</span><span class="eco-ending">as</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">practic</span><span class="eco-ending">ás</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">practic</span><span class="eco-ending">a</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">practic</span><span class="eco-ending">amos</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">practic</span><span class="eco-ending">áis</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">practic</span><span class="eco-ending">an</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">aprend</span><span class="eco-ending">o</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">aprend</span><span class="eco-ending">es</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">aprend</span><span class="eco-ending">és</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">aprend</span><span class="eco-ending">e</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">aprend</span><span class="eco-ending">emos</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">aprend</span><span class="eco-ending">éis</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">aprend</span><span class="eco-ending">en</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">abr</span><span class="eco-ending">o</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">abr</span><span class="eco-ending">es</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">abr</span><span class="eco-ending">ís</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">abr</span><span class="eco-ending">ís</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">abr</span><span class="eco-ending">e</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">abr</span><span class="eco-ending">imos</span></span>
+                    <span class="draggable-word" draggable="true" spellcheck="false" contenteditable="false" tabindex="-1" aria-hidden="true"><span class="eco-stem">abr</span><span class="eco-ending">en</span></span>
+                </div>
+                <div id="practice-feedback" class="eco-practice-feedback" aria-live="polite"></div>
+                <button id="eco-hint-btn" class="eco-hint-btn" aria-label="Show English meanings" style="margin:1em auto 0 auto;display:block;">Show Hints</button>
+                <button id="eco-next-btn" class="eco-next-btn" style="display:none;margin:1.2em auto 0 auto;">Next &rarr;</button>
             </div>
-            <p style="font-size:0.95rem;color:#888;margin-top:2rem;">Material adaptado de Mónica Flórez (<a href="mailto:mmflorezg@gmail.com" style="color:var(--eco-green,#388e3c);">mmflorezg@gmail.com</a>) • <a href="http://espanoliandoconmonicaflorez.weebly.com/" target="_blank" style="color:var(--eco-green,#388e3c);">espanoliandoconmonicaflorez.weebly.com</a></p>
+            <div id="eco-cta" style="margin:2.5em auto 1.5em auto;max-width:420px;text-align:center;background:#f4f7e7;border-radius:1.2em;padding:1.2em 1em 1.2em 1em;box-shadow:0 2px 12px #0001;">
+                <div style="font-size:1.25em;font-weight:700;color:#1e88e5;margin-bottom:0.3em;">Ready for more Spanish?</div>
+                <a href="material.html" class="eco-cta-btn" style="display:inline-block;padding:0.7em 2.2em;background:#7a8b2f;color:#fff;font-size:1.1em;font-weight:600;border-radius:0.7em;text-decoration:none;box-shadow:0 2px 8px #0002;transition:background 0.2s;">Continue Learning</a>
+            </div>
+            <p class="eco-material-credit">Material adapted from Mónica Flórez (<a href="mailto:mmflorezg@gmail.com">mmflorezg@gmail.com</a>) • <a href="http://espanoliandoconmonicaflorez.weebly.com/" target="_blank">espanoliandoconmonicaflorez.weebly.com</a></p>
         </section>
     </main>
     <footer class="eco-footer">
@@ -323,9 +352,21 @@
                     }
                 });
                 const feedback = document.getElementById('practice-feedback');
+                const progressInner = document.getElementById('eco-progress-inner');
+                const stars = document.querySelectorAll('#eco-stars .eco-star');
                 if (correct === dropzones.length) {
                     feedback.textContent = '¡Muy bien! Todos los verbos están en el lugar correcto.';
                     feedback.style.color = 'var(--eco-green,#388e3c)';
+                    progressInner.style.width = '100%';
+                    stars.forEach((star, index) => {
+                        setTimeout(() => {
+                            star.style.opacity = '1';
+                            star.style.transform = 'translateY(0)';
+                        }, index * 100);
+                    });
+                    setTimeout(() => {
+                        document.getElementById('eco-confetti').style.display = 'block';
+                    }, 600);
                 } else {
                     feedback.textContent = '';
                 }
@@ -395,86 +436,67 @@
         }
         
         #dragdrop-game {
+            display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 0.7rem !important;
             max-width: 100vw;
             overflow-x: unset;
         }
         
-        #draggables .draggable-word {
-            font-size: 0.97em;
-            padding: 0.3rem 0.7rem;
-        }
-        
-        .drag-table caption {
-            font-weight: 700;
-            color: var(--eco-olive, #7a8b2f);
-            font-size: 1.08em;
-            letter-spacing: 0.02em;
-            background: #f4f7e7;
-            border-radius: 0.4em 0.4em 0 0;
-            padding: 0.25em 0 0.15em 0;
-            margin-bottom: 0.1em;
-        }
-        
-        .drag-table th {
-            font-size: 1.05em;
-            font-weight: 600;
-            color: #6a7a2f;
-            background: transparent;
-            padding: 0.13em 0.3em 0.13em 0.1em !important;
-            text-align: right;
-            width: 2.9em;
-        }
-        
-        .drag-table td {
-            padding: 0.13em 0.2em !important;
-            min-width: 120px;
-            width: 130px;
-            max-width: 160px;
-        }
-        
-        .drag-table .dropzone {
-            min-width: 120px;
-            max-width: 160px;
-            min-height: 1.7em;
-            border: 1.7px dashed #bbb;
-            border-radius: 0.4em;
-            background: #f8f8f8;
-            transition: background 0.2s, border 0.2s;
-            text-align: center;
-            font-size: 0.98em;
-            margin: 0.1em 0;
+        #draggables {
             display: flex;
-            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5em 1em;
             justify-content: center;
-        }
-        
-        .drag-table .draggable-word {
-            font-size: 1em;
-            padding: 0.25rem 0.8rem;
-            margin: 0.08em 0.08em 0.08em 0;
-            border-radius: 0.5em;
-            border: 1.5px solid #bbb;
-            background: #fff;
-            box-shadow: 0 1px 2px #0001;
-            transition: box-shadow 0.2s, background 0.2s, border 0.2s;
+            margin: 1.2em 0 0 0;
             min-width: unset;
-            width: auto;
-            max-width: 150px;
-            white-space: nowrap;
-            display: inline-block;
+            max-width: unset;
+            background: none;
+            border-radius: 0.7em;
+            box-shadow: none;
+            padding: 0;
         }
         
-        .drag-table .draggable-word.dragging {
-            opacity: 0.5;
-            background: #e0e0e0;
-            border: 1.5px dashed #888;
+        .eco-table-caption-bar {
+            font-weight: 700;
+            font-size: 1.08em;
+            letter-spacing: 0.04em;
+            padding: 0.45em 0.5em 0.45em 0.9em;
+            border-radius: 0.7em 0.7em 0 0;
+            margin-bottom: -0.2em;
+            margin-top: 0.1em;
+            margin-left: 0.1em;
+            margin-right: 0.1em;
+            box-shadow: 0 2px 8px #0001;
+            color: #fff;
+            text-shadow: 0 1px 2px #0002;
+            border: none;
+            display: block;
+            width: 100%;
+            text-align: left;
+        }
+        
+        .eco-table-caption-ar {
+            background: linear-gradient(90deg, #1e88e5 70%, #5eb6f7 100%);
+            /* Blue for -AR */
+        }
+        
+        .eco-table-caption-er {
+            background: linear-gradient(90deg, #7a8b2f 70%, #b6c94d 100%);
+            /* Green for -ER */
+        }
+        
+        .eco-table-caption-ir {
+            background: linear-gradient(90deg, #b85c1e 70%, #e6a06a 100%);
+            /* Brown/Orange for -IR */
         }
         
         @media (max-width: 900px) {
             #dragdrop-game {
                 grid-template-columns: repeat(2, 1fr);
+            }
+            #draggables {
+                margin: 1em 0 0 0;
             }
         }
         
@@ -482,6 +504,21 @@
             #dragdrop-game {
                 grid-template-columns: 1fr;
             }
+            #draggables {
+                margin: 1em 0 0 0;
+            }
+        }
+        
+        .draggable-word input,
+        .draggable-word button,
+        .draggable-word label {
+            display: none !important;
+        }
+        
+        .draggable-word::before,
+        .draggable-word::after {
+            display: none !important;
+            content: none !important;
         }
     </style>
 </body>
