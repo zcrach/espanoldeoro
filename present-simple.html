@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Español de Oro • Present Simple (Indicative)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="header-include"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-include').innerHTML = data;
+            })
+            .catch(() => {
+                document.getElementById('header-include').innerHTML = '<header class="eco-header"><div class="eco-header-content"><h1>Español de Oro</h1></div></header>';
+            });
+    </script>
+    <main>
+        <section class="eco-section">
+            <h2>El Presente Simple</h2>
+            <div style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+                <div style="background:var(--eco-light);padding:1rem 2rem;border-radius:1rem;box-shadow:0 2px 8px #0001;">
+                    <span style="font-size:1.5rem;color:var(--eco-olive);font-weight:600;">Yo <span style="color:#1e88e5;font-weight:700;">hablo</span> español, ¿y tú?</span>
+                </div>
+                <div style="background:var(--eco-green-light,#eafaf1);color:var(--eco-green,#388e3c);padding:0.5rem 1.2rem;border-radius:1rem;font-weight:600;">AHORA</div>
+            </div>
+            <p style="font-size:1.1rem;background:#fffbe6;padding:0.7rem 1.2rem;border-left:4px solid var(--eco-orange,#ff9800);margin-bottom:1.5rem;">
+                <strong>El <span style="color:var(--eco-orange,#ff9800);">Presente Simple</span></strong> describe una acción que sucede en el momento presente.
+            </p>
+            <h3 style="color:var(--eco-green,#388e3c);margin-top:2rem;">Verbos Regulares</h3>
+            <div style="overflow-x:auto;margin-bottom:1.5rem;">
+                <table class="eco-table" style="min-width:600px;text-align:center;border-collapse:collapse;">
+                    <thead>
+                        <tr style="background:var(--eco-olive-light,#f4f7e7);">
+                            <th>SUJETO</th>
+                            <th>-AR (HABLAR)</th>
+                            <th>-ER (COMER)</th>
+                            <th>-IR (VIVIR)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>YO</td>
+                            <td><span style="color:#e53935;font-weight:600;">HABLO</span></td>
+                            <td><span style="color:#e53935;font-weight:600;">COMO</span></td>
+                            <td><span style="color:#e53935;font-weight:600;">VIVO</span></td>
+                        </tr>
+                        <tr>
+                            <td>TÚ</td>
+                            <td><span style="color:#e53935;font-weight:600;">HABLAS</span></td>
+                            <td><span style="color:#e53935;font-weight:600;">COMES</span></td>
+                            <td><span style="color:#e53935;font-weight:600;">VIVES</span></td>
+                        </tr>
+                        <tr>
+                            <td>VOS</td>
+                            <td><span style="color:#e53935;font-weight:600;">HABLÁS</span></td>
+                            <td><span style="color:#e53935;font-weight:600;">COMÉS</span></td>
+                            <td><span style="color:#e53935;font-weight:600;">VIVÍS</span></td>
+                        </tr>
+                        <tr>
+                            <td>ÉL – ELLA – USTED</td>
+                            <td>HABLA</td>
+                            <td>COME</td>
+                            <td>VIVE</td>
+                        </tr>
+                        <tr>
+                            <td>NOSOTROS (AS)</td>
+                            <td><span style="color:#1e88e5;font-weight:600;">HABLAMOS</span></td>
+                            <td><span style="color:#1e88e5;font-weight:600;">COMEMOS</span></td>
+                            <td><span style="color:#1e88e5;font-weight:600;">VIVIMOS</span></td>
+                        </tr>
+                        <tr>
+                            <td>VOSOTROS (AS)</td>
+                            <td>HABLÁIS</td>
+                            <td>COMÉIS</td>
+                            <td>VIVÍS</td>
+                        </tr>
+                        <tr>
+                            <td>ELLOS (AS) – USTEDES</td>
+                            <td>HABLAN</td>
+                            <td>COMEN</td>
+                            <td>VIVEN</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:2rem;margin-bottom:2rem;">
+                <div style="flex:1;min-width:220px;">
+                    <div style="font-size:1rem;font-weight:600;color:var(--eco-olive,#7a8b2f);margin-bottom:0.3rem;">Ejemplos de verbos regulares:</div>
+                    <ul style="font-size:0.98rem;columns:2;max-width:350px;list-style:square inside;">
+                        <li>BAJAR</li>
+                        <li>BUSCAR</li>
+                        <li>CAMBIAR</li>
+                        <li>CANTAR</li>
+                        <li>COCINAR</li>
+                        <li>COMPAR</li>
+                        <li>CONTESTAR</li>
+                        <li>CORTAR</li>
+                        <li>DEJAR</li>
+                        <li>DESCANSAR</li>
+                        <li>ENTRAR</li>
+                        <li>ESCUCHAR</li>
+                        <li>ESTUDIAR</li>
+                        <li>ENVIAR</li>
+                        <li>EXTRAÑAR</li>
+                        <li>GANAR</li>
+                        <li>GIRAR</li>
+                        <li>LLAMAR(SE)</li>
+                        <li>LIMPIAR</li>
+                        <li>MIRAR</li>
+                        <li>ODIAR</li>
+                        <li>ORDENAR</li>
+                        <li>PRACTICAR</li>
+                        <li>PREGUNTAR</li>
+                        <li>PREPARAR</li>
+                        <li>QUEDAR(SE)</li>
+                        <li>REGRESAR</li>
+                        <li>SALUDAR</li>
+                        <li>TRABAJAR</li>
+                        <li>TOMAR</li>
+                        <li>USAR</li>
+                    </ul>
+                </div>
+                <div style="flex:1;min-width:220px;">
+                    <div style="font-size:1rem;font-weight:600;color:var(--eco-olive,#7a8b2f);margin-bottom:0.3rem;">Ejemplos -ER:</div>
+                    <ul style="font-size:0.98rem;columns:2;max-width:350px;list-style:square inside;">
+                        <li>APRENDER</li>
+                        <li>BARRER</li>
+                        <li>BEBER</li>
+                        <li>CREER</li>
+                        <li>CORRER</li>
+                        <li>COSER</li>
+                        <li>DEBER</li>
+                        <li>ESCONDER</li>
+                        <li>LEER</li>
+                        <li>METER</li>
+                        <li>POSEER</li>
+                        <li>PRENDER</li>
+                        <li>PROMETER</li>
+                        <li>RESPONDER</li>
+                        <li>ROMPER</li>
+                        <li>TOSER</li>
+                        <li>VENDER</li>
+                        <li>VER</li>
+                    </ul>
+                </div>
+                <div style="flex:1;min-width:220px;">
+                    <div style="font-size:1rem;font-weight:600;color:var(--eco-olive,#7a8b2f);margin-bottom:0.3rem;">Ejemplos -IR:</div>
+                    <ul style="font-size:0.98rem;columns:2;max-width:350px;list-style:square inside;">
+                        <li>ABRIR</li>
+                        <li>ADMITIR</li>
+                        <li>AÑADIR</li>
+                        <li>APLAUDIR</li>
+                        <li>ASISTIR</li>
+                        <li>BATIR</li>
+                        <li>CUBRIR</li>
+                        <li>DESCUBRIR</li>
+                        <li>DISCUTIR</li>
+                        <li>ESCRIBIR</li>
+                        <li>EXISTIR</li>
+                        <li>EXPRIMIR</li>
+                        <li>IMPRIMIR</li>
+                        <li>PARTIR</li>
+                        <li>RECIBIR</li>
+                        <li>SUBIR</li>
+                    </ul>
+                </div>
+            </div>
+            <h3 style="margin-top:2.5rem;color:var(--eco-orange,#ff9800);">A Practicar</h3>
+            <div id="practice-area" style="background:var(--eco-light,#f9fbe7);padding:1.2rem 1.5rem;border-radius:1rem;margin-bottom:2rem;">
+                <strong>1. Ubica los verbos de la derecha en las tablas de la izquierda:</strong>
+                <div id="dragdrop-game" style="display:flex;flex-wrap:wrap;gap:2rem;margin-top:1.2rem;">
+                    <div style="flex:1;min-width:220px;">
+                        <table class="eco-table" style="margin-bottom:1rem;">
+                            <caption style="font-weight:600;color:var(--eco-olive,#7a8b2f);">PRACTICAR</caption>
+                            <tr>
+                                <td class="dropzone" data-answer="practico"></td>
+                            </tr>
+                            <tr>
+                                <td class="dropzone" data-answer="practicamos"></td>
+                            </tr>
+                            <tr>
+                                <td class="dropzone" data-answer="practican"></td>
+                            </tr>
+                        </table>
+                        <table class="eco-table">
+                            <caption style="font-weight:600;color:var(--eco-olive,#7a8b2f);">ABRIR</caption>
+                            <tr>
+                                <td class="dropzone" data-answer="abro"></td>
+                            </tr>
+                            <tr>
+                                <td class="dropzone" data-answer="abres"></td>
+                            </tr>
+                            <tr>
+                                <td class="dropzone" data-answer="abre"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div style="flex:1;min-width:220px;">
+                        <table class="eco-table" style="margin-bottom:1rem;">
+                            <caption style="font-weight:600;color:var(--eco-olive,#7a8b2f);">APRENDER</caption>
+                            <tr>
+                                <td class="dropzone" data-answer="aprendes"></td>
+                            </tr>
+                            <tr>
+                                <td class="dropzone" data-answer="aprende"></td>
+                            </tr>
+                        </table>
+                        <table class="eco-table">
+                            <caption style="font-weight:600;color:var(--eco-olive,#7a8b2f);">BUSCAR</caption>
+                            <tr>
+                                <td class="dropzone" data-answer="busca"></td>
+                            </tr>
+                            <tr>
+                                <td class="dropzone" data-answer="buscamos"></td>
+                            </tr>
+                            <tr>
+                                <td class="dropzone" data-answer="buscan"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div style="flex:1;min-width:220px;">
+                        <div id="draggables" style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+                            <span class="draggable-word" draggable="true">aprendo</span>
+                            <span class="draggable-word" draggable="true">aprenden</span>
+                            <span class="draggable-word" draggable="true">practicas</span>
+                            <span class="draggable-word" draggable="true">abrimos</span>
+                            <span class="draggable-word" draggable="true">busco</span>
+                            <span class="draggable-word" draggable="true">aprendemos</span>
+                            <span class="draggable-word" draggable="true">practica</span>
+                            <span class="draggable-word" draggable="true">abren</span>
+                            <span class="draggable-word" draggable="true">buscas</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="practice-feedback" style="margin-top:1rem;font-weight:600;"></div>
+            </div>
+            <p style="font-size:0.95rem;color:#888;margin-top:2rem;">Material adaptado de Mónica Flórez (<a href="mailto:mmflorezg@gmail.com" style="color:var(--eco-green,#388e3c);">mmflorezg@gmail.com</a>) • <a href="http://espanoliandoconmonicaflorez.weebly.com/" target="_blank" style="color:var(--eco-green,#388e3c);">espanoliandoconmonicaflorez.weebly.com</a></p>
+        </section>
+    </main>
+    <footer class="eco-footer">
+        <p>&copy; 2025 Español de Oro • Salvador de Oro Visbal</p>
+    </footer>
+</body>
+
+</html>
